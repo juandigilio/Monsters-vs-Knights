@@ -16,21 +16,28 @@ public class Player : Entity
 
         currentHealth = maxHealth;
     }
+
+    public void Update()
+    {
+        GetInput();
+    }
+
     public override void Walk()
     {
-        if (Input.mousePosition.x > transform.position.x)
+        if (Input.mousePosition.x > 150.0f)
         {
             parallax.UpdatePositions(speed);
+            transform.localScale = new Vector3(1, 1, 1);
+            //Debug.Log("pos:" + transform.position.x);
+            //Debug.Log("mouse:" + Input.mousePosition.x)
         }
         else
         {
             parallax.UpdatePositions(-speed);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
-
-        transform.position += Vector3.up * speed * Time.deltaTime;
     }
 
-    // Sobrescribir el método Attack para personalizar el ataque del jugador
     public override void Attack()
     {
 
@@ -43,7 +50,7 @@ public class Player : Entity
 
     public void GetInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Walk();
         }
