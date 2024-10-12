@@ -28,8 +28,6 @@ public class Player : Entity
         {
             parallax.UpdatePositions(speed);
             transform.localScale = new Vector3(1, 1, 1);
-            //Debug.Log("pos:" + transform.position.x);
-            //Debug.Log("mouse:" + Input.mousePosition.x)
         }
         else
         {
