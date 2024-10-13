@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class Player : Entity
 {
-    [SerializeField] Parallax parallax;
-
-
     public void Start()
     {
         maxHealth = 100;
@@ -26,12 +23,10 @@ public class Player : Entity
     {
         if (Input.mousePosition.x > 150.0f)
         {
-            parallax.UpdatePositions(speed);
             transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
-            parallax.UpdatePositions(-speed);
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }

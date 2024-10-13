@@ -44,6 +44,8 @@ public class Parallax : MonoBehaviour
 
     private void UpdateLayer(Transform layer, Transform first, Transform last, Transform layer_2, Transform first_2, Transform last_2, float speed, float size, float layerSize)
     {
+        Debug.Log($"First Layer Pos: {layer.position.x}, Last Layer Pos: {last.position.x}, Trigger1: {trigger_1.position.x}, Trigger2: {trigger_2.position.x}");
+
         if (speed > 0)
         {
             if (last.position.x + size > trigger_1.transform.position.x && last.position.x < trigger_2.transform.position.x)
@@ -58,25 +60,23 @@ public class Parallax : MonoBehaviour
             }
         }
         else if (speed < 0)
-        {          
+        {
             if (first.position.x - size > trigger_1.transform.position.x && first_2.position.x < trigger_1.position.x)
             {
-                layer.position += Vector3.left * speed * Time.deltaTime; // Movimiento hacia la derecha
+                layer.position += Vector3.left * speed * Time.deltaTime;
                 layer_2.position = new Vector3(layer.position.x - layerSize, layer_2.position.y, 0);
-                
 
-                Debug.Log("fist");
-               // Debug.Log("layer1 pos: " + layer.position);
-               // Debug.Log("layer2 pos: " + layer_2.position);
+                Debug.Log("Moving Layer Right");
             }
             else
             {
-                layer_2.position += Vector3.left * speed * Time.deltaTime; // Movimiento hacia la derecha
+                layer_2.position += Vector3.left * speed * Time.deltaTime;
                 layer.position = new Vector3(layer_2.position.x - layerSize, layer.position.y, 0);
-                Debug.Log("second");
-               // Debug.Log("layer1 pos: " + layer.position);
-               // Debug.Log("layer2 pos: " + layer_2.position);
+                Debug.Log("Repositioning Layers");
             }
         }
+
+        Debug.Log($"Updated Layer1 Pos: {layer.position.x}, Layer2 Pos: {layer_2.position.x}");
     }
+
 }
