@@ -27,7 +27,7 @@ public class AnimatorController : MonoBehaviour
 
         anim.SetBool("isWalking", character.IsWalking());
 
-        anim.SetBool("isAttacking", character.IsAttacking());
+        anim.SetBool("isAttaking", character.IsAttacking());
 
     }
 

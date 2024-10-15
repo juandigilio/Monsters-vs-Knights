@@ -3,11 +3,14 @@ using UnityEngine;
 public abstract class Entity : MonoBehaviour
 {
     [SerializeField] protected int maxHealth;
-    [SerializeField] protected int damage;
-    [SerializeField] protected int extraDamage;
+    [SerializeField] protected int shortRangeDamage;
+    [SerializeField] protected int longRangeDamage;
     [SerializeField] protected int defense;
     [SerializeField] protected int extraDefense;
     [SerializeField] protected float speed;
+
+    [SerializeField] protected float shortAttackRange;
+    [SerializeField] protected float longAttackRange;
 
     protected int currentHealth;
 
@@ -20,9 +23,9 @@ public abstract class Entity : MonoBehaviour
     {
     }
 
-    public virtual void Attack()
-    {
-    }
+    //public virtual void Attack()
+    //{
+    //}
 
     public void ReceiveDamage(int damage)
     {
