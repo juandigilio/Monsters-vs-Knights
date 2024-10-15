@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: c97a3cb5e5d0b5d499e64d2935ffcc53, type: 3}
+  sprites: []
   parallaxSpeed: 1.5
   sortingOrder: 3
 --- !u!4 &171589808
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: f9b27aa3d5b919349b75e3b780958da7, type: 3}
+  sprites: []
   parallaxSpeed: 0.8
   sortingOrder: 1
 --- !u!4 &390820402
@@ -2270,7 +2270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2b1f5906309230443b85825391895cf7, type: 3}
+  sprites: []
   parallaxSpeed: 2
   sortingOrder: 4
 --- !u!4 &560064641
@@ -2317,7 +2317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2129fad5cf759df40a9eab46cf6c4135, type: 3}
+  sprites: []
   parallaxSpeed: 1
   sortingOrder: 2
 --- !u!4 &564151785
@@ -2474,7 +2474,6 @@ MonoBehaviour:
   defense: 0
   extraDefense: 0
   speed: 100
-  parallax: {fileID: 692017104}
 --- !u!1 &594060785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,7 +2945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 4dbf8be1e88371e4b97bd1b080d593af, type: 3}
+  sprites: []
   parallaxSpeed: 0.5
   sortingOrder: 0
 --- !u!4 &629172741
@@ -5746,7 +5745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666138c795abf634887c37a1353173e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: aeb0fc3868fc32b42a273b5cd3937d65, type: 3}
+  sprites: []
   parallaxSpeed: 3
   sortingOrder: 5
 --- !u!4 &1089452537
@@ -9312,7 +9311,6 @@ MonoBehaviour:
   defense: 0
   extraDefense: 0
   speed: 500
-  parallax: {fileID: 692017104}
 --- !u!1 &1868943250
 GameObject:
   m_ObjectHideFlags: 0
@@ -9959,7 +9957,7 @@ MonoBehaviour:
   - {fileID: 629172740}
   - {fileID: 390820401}
   - {fileID: 564151784}
-  cameraTransform: {fileID: 519420032}
+  mainCamera: {fileID: 519420031}
 --- !u!4 &1947680274
 Transform:
   m_ObjectHideFlags: 0
