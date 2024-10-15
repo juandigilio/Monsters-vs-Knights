@@ -4,15 +4,52 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<Animator> animations;
+    [SerializeField] private Entity character;
+
+
+    private void Awake()
     {
-        
+        LevelController.OnAnimationWon += SetWiningAnimation;
+        LevelController.OnAnimationLost += SetDeathAnimation;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        foreach (Animator anim in animations)
+        {
+            UpdateParameters(anim);
+        }
+    }
+
+    private void UpdateParameters(Animator anim)
+    {
+
+        anim.SetBool("isWalking", character.IsWalking());
+
+        anim.SetBool("isAttacking", character.IsAttacking());
+
+    }
+
+    private void SetDeathAnimation()
+    {
+        foreach (Animator anim in animations)
+        {
+            anim.SetTrigger("isDead");
+        }
+    }
+
+    private void SetWiningAnimation()
+    {
+        foreach (Animator anim in animations)
+        {
+            anim.SetTrigger("hasWon");
+        }
+    }
+
+    private void OnDestroy()
+    {
+        LevelController.OnAnimationLost -= SetWiningAnimation;
+        LevelController.OnAnimationWon -= SetDeathAnimation;
     }
 }

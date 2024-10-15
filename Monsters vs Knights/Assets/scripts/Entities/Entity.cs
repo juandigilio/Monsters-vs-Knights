@@ -11,7 +11,11 @@ public abstract class Entity : MonoBehaviour
 
     protected int currentHealth;
 
-    
+    protected bool isWalking;
+    protected bool isAttacking;
+
+
+
     public virtual void Walk()
     {
     }
@@ -51,5 +55,15 @@ public abstract class Entity : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    public bool IsWalking()
+    {
+        return isWalking;
+    }
+
+    public bool IsAttacking()
+    {
+        return isAttacking;
     }
 }

@@ -21,6 +21,8 @@ public class Player : Entity
 
     public override void Walk()
     {
+        isWalking = true;
+
         if (Input.mousePosition.x > 150.0f)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -46,6 +48,10 @@ public class Player : Entity
         if (Input.GetMouseButton(0))
         {
             Walk();
+        }
+        else
+        {
+            isWalking = false;
         }
     }
 }
