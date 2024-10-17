@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\parallax\\parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallax\\parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\animator\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\animator\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animator\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\parallax\\parallaxlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallax\\parallaxlayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\parallax\\parallaxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallax\\parallaxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\parallax\\parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\parallax\\parallax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,108 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Enemy.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Enemy.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Enemy.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T04:04:46.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LevelController.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\LevelController.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\LevelController.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\LevelController.cs",
               "RelativeToolTip": "Assets\\scripts\\LevelController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAcAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:54:22.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParallaxLayer.cs",
-              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\ParallaxLayer.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\Parallax\\ParallaxLayer.cs",
-              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\ParallaxLayer.cs",
-              "RelativeToolTip": "Assets\\scripts\\Parallax\\ParallaxLayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:11:18.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ParallaxController.cs",
-              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\ParallaxController.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\Parallax\\ParallaxController.cs",
-              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\ParallaxController.cs",
-              "RelativeToolTip": "Assets\\scripts\\Parallax\\ParallaxController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:11:15.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AnimatorController.cs",
-              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\Scripts\\Animator\\AnimatorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Animator\\AnimatorController.cs",
-              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\Scripts\\Animator\\AnimatorController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Animator\\AnimatorController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\AnimatorController.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Animator\\AnimatorController.cs",
+              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\AnimatorController.cs",
+              "RelativeToolTip": "Assets\\scripts\\Animator\\AnimatorController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAEAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T22:59:28.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Parallax.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\Parallax.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Parallax\\Parallax.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Parallax\\Parallax.cs",
               "RelativeToolTip": "Assets\\scripts\\Parallax\\Parallax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T19:15:19.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Player.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Player.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Player.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T16:36:19.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Entity.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Entity.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Entity.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Entity.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwDUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T16:34:41.807Z",
               "EditorCaption": ""

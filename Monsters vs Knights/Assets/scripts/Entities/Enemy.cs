@@ -6,10 +6,7 @@ public class Enemy : Entity
 {
     //[SerializeField] private LevelController level;
 
-    private bool isLongRange;
-    private bool isShortRange;
-
-    public void Start()
+    public void Awake()
     {
         maxHealth = 100;
         shortRangeDamage = 100;
@@ -47,24 +44,5 @@ public class Enemy : Entity
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
     }
-
-    //public (Entity closestEnemy, float minDistance) GetClosestEnemy()
-    //{
-    //    float minDistance = longAttackRange;
-    //    Entity closestEnemy = null;
-
-    //    foreach (Entity enemy in level.GetEnemies())
-    //    {
-    //        float distance = Vector3.Distance(transform.position, enemy.transform.position);
-
-    //        if (distance < minDistance)
-    //        {
-    //            minDistance = distance;
-    //            closestEnemy = enemy;
-    //        }
-    //    }
-
-    //    return (closestEnemy, minDistance);
-    //}
 }
 

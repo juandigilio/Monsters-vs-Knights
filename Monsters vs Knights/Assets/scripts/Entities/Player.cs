@@ -4,11 +4,13 @@ public class Player : Entity
 {
     [SerializeField] private LevelController level;
 
-    private bool isLongRange;
-    private bool isShortRange;
 
+    public void Awake()
+    {
+        LevelController.OnPlayerWon += Won;
+    }
 
-    public void Start()
+    public override void Start()
     {
         maxHealth = 100;
         longAttackRange = 2;
@@ -50,9 +52,8 @@ public class Player : Entity
         foreach (Enemy enemy in level.GetEnemies())
         {
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
-            Debug.Log($"distance: {distance}");
-            Debug.Log($"minDistance: {minDistance}");
-
+            //Debug.Log($"distance: {distance}");
+            //Debug.Log($"minDistance: {minDistance}");
 
             if (distance < minDistance)
             {
@@ -77,6 +78,7 @@ public class Player : Entity
             {
                 enemy.ReceiveDamage(shortRangeDamage);
                 isShortRange = true;
+                isLongRange = false;
 
                 Debug.Log("Short range attack");
             }
@@ -84,6 +86,7 @@ public class Player : Entity
             {
                 enemy.ReceiveDamage(longRangeDamage);
                 isLongRange = true;
+                isShortRange = false;
 
                 Debug.Log("Long range attack");
             }
@@ -97,9 +100,14 @@ public class Player : Entity
         }
     }
 
+    public void Won()
+    {
+        hasWon = true;
+    }
+
     public override void Die()
     {
-
+        
     }
 
     public void GetInput()

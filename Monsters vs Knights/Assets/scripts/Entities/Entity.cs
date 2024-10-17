@@ -16,8 +16,23 @@ public abstract class Entity : MonoBehaviour
 
     protected bool isWalking;
     protected bool isAttacking;
+    protected bool isLongRange;
+    protected bool isShortRange;
+    protected bool wasHitted;
+    protected bool hasWon;
 
 
+    public virtual void Start()
+    {
+        currentHealth = maxHealth;
+
+        isWalking = false;
+        isAttacking = false;
+        isLongRange = false;
+        isShortRange = false;
+        wasHitted = false;
+        hasWon = false;
+    }
 
     public virtual void Walk()
     {
@@ -32,17 +47,13 @@ public abstract class Entity : MonoBehaviour
         currentHealth -= (damage - (damage * defense / 100)); //mitigo dano usando la defensa como un porcentaje, defensa 5 quita el 5% del ataque
     }
 
-    public void CheckState()
-    {
-        if (currentHealth < 1)
-        {
-            Die();
-        }
-    }
-
     public virtual void Die()
     {
-        Debug.Log($"{gameObject.name} ha muerto.");
+    }
+
+    public bool IsDead()
+    {
+        return currentHealth < 1 ? true : false;
     }
 
     public void Heal(int amount)
@@ -68,5 +79,25 @@ public abstract class Entity : MonoBehaviour
     public bool IsAttacking()
     {
         return isAttacking;
+    }
+
+    public bool IsLongRange()
+    {
+        return isLongRange;
+    }
+
+    public bool IsShortRange() 
+    {
+        return isShortRange;
+    }
+
+    public bool WasHitted()
+    {
+        return wasHitted;
+    }
+
+    public bool HasWon()
+    {
+        return hasWon;
     }
 }

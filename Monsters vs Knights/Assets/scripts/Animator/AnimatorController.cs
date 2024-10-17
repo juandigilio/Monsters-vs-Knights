@@ -10,8 +10,6 @@ public class AnimatorController : MonoBehaviour
 
     private void Awake()
     {
-        LevelController.OnAnimationWon += SetWiningAnimation;
-        LevelController.OnAnimationLost += SetDeathAnimation;
     }
 
     void Update()
@@ -27,15 +25,22 @@ public class AnimatorController : MonoBehaviour
 
         anim.SetBool("isWalking", character.IsWalking());
 
-        anim.SetBool("isAttaking", character.IsAttacking());
+        anim.SetBool("isShortRange", character.IsShortRange());
 
+        anim.SetBool("isLongRange", character.IsLongRange());
+
+        CheckStatus();
     }
 
-    private void SetDeathAnimation()
+    private void CheckStatus()
     {
-        foreach (Animator anim in animations)
+        if (character.HasWon())
         {
-            anim.SetTrigger("isDead");
+            SetWiningAnimation();
+        }
+        if (character.IsDead())
+        {
+            SetDeathAnimation();
         }
     }
 
@@ -47,9 +52,16 @@ public class AnimatorController : MonoBehaviour
         }
     }
 
+    private void SetDeathAnimation()
+    {
+        foreach (Animator anim in animations)
+        {
+            anim.SetTrigger("isDead");
+        }
+    }
+
     private void OnDestroy()
     {
-        LevelController.OnAnimationLost -= SetWiningAnimation;
-        LevelController.OnAnimationWon -= SetDeathAnimation;
+        //LevelController.OnAnimationWon -= SetWiningAnimation;
     }
 }
