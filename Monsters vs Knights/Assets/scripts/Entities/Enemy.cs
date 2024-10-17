@@ -5,15 +5,20 @@ using UnityEngine;
 public class Enemy : Entity
 {
     //[SerializeField] private LevelController level;
+    private Vector3 playerPosition;
 
     public void Awake()
     {
         maxHealth = 100;
-        shortRangeDamage = 100;
-        longRangeDamage = 1000;
+        longAttackRange = 1.5f;
+        shortAttackRange = 0.7f;
+        shortRangeDamage = 15;
+        longRangeDamage = 8;
         defense = 5;
         extraDefense = 0;
-        speed = 5f;
+        speed = 200f;
+
+        attackCooldown = 0.9f;
 
         currentHealth = maxHealth;
     }
@@ -25,16 +30,24 @@ public class Enemy : Entity
 
     public override void Walk()
     {
-        //isWalking = true;
+        if (Mathf.Abs(playerDistance) > longAttackRange)
+        {
+            if ()
+            transform.position += Vector3.right * speed * Time.deltaTime;
+        }
+        else
+        {
+            isWalking = false;
+        }
+        isWalking = true;
+    }
 
-        //if (Input.mousePosition.x > 150.0f)
-        //{
-        //    transform.localScale = new Vector3(1, 1, 1);
-        //}
-        //else
-        //{
-        //    transform.localScale = new Vector3(-1, 1, 1);
-        //}
+    public void Attack(Vector3 playerPos)
+    {
+        if (!isWalking)
+        {
+
+        }
     }
 
     public void GetInput()
@@ -43,6 +56,11 @@ public class Enemy : Entity
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
+    }
+
+    public void SetPlayerPosition(Vector3 playerPos)
+    {
+        playerPosition = playerPos;
     }
 }
 
