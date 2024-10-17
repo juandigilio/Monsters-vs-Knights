@@ -18,7 +18,6 @@ public abstract class Entity : MonoBehaviour
     protected int currentHealth;
 
     protected bool canAttack;
-    //protected bool canBeAttacked;
     protected bool isWalking;
     protected bool isAttacking;
     protected bool isLongRange;
@@ -38,6 +37,8 @@ public abstract class Entity : MonoBehaviour
         isShortRange = false;
         wasHitted = false;
         hasWon = false;
+
+        canAttack = true;
     }
 
     public virtual void Walk()
@@ -47,8 +48,6 @@ public abstract class Entity : MonoBehaviour
     public void ReceiveDamage(int damage)
     {
         currentHealth -= (damage - (damage * defense / 100)); //mitigo dano usando la defensa como un porcentaje, defensa 5 quita el 5% del ataque
-        //wasHitted = true;
-        //CanBeAttackedCooldown();
     }
 
     public virtual void Die()
@@ -57,7 +56,7 @@ public abstract class Entity : MonoBehaviour
 
     public bool IsDead()
     {
-        Debug.Log(tag + "IsDead" + currentHealth);
+        //Debug.Log(tag + "IsDead" + currentHealth);
 
         return currentHealth < 1 ? true : false;
     }
@@ -117,22 +116,10 @@ public abstract class Entity : MonoBehaviour
         return hasWon;
     }
 
-    //public bool CanBeAttacked()
-    //{
-    //    return canBeAttacked;
-    //}
-
     protected IEnumerator AttackCooldown()
     {
         canAttack = false;
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
-
-    //private IEnumerable CanBeAttackedCooldown()
-    //{
-    //    canBeAttacked = false;
-    //    yield return new WaitForSeconds(recieveDamageCooldown);
-    //    canBeAttacked = true;
-    //}
 }

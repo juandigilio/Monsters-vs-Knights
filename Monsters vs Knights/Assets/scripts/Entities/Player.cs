@@ -8,21 +8,13 @@ public class Player : Entity
 
     public void Awake()
     {
+        canAttack = true;
         LevelController.OnPlayerWon += Won;
     }
 
     public override void Start()
     {
         maxHealth = 100;
-        longAttackRange = 2;
-        shortAttackRange = 1;
-        shortRangeDamage = 25;
-        longRangeDamage = 15;
-        defense = 5;
-        extraDefense = 0;
-        speed = 5f;
-        attackCooldown = 0.5f;
-
         currentHealth = maxHealth;
     }
 
@@ -30,6 +22,8 @@ public class Player : Entity
     {
         GetInput();
         GetClosestEnemy();
+
+        //Debug.Log($"player position: {transform.position}");
     }
 
     public override void Walk()
@@ -62,7 +56,7 @@ public class Player : Entity
                 minDistance = distance;
                 closestEnemy = enemy;
 
-                Debug.Log($"Closest enemy: {closestEnemy.name}, distance: {minDistance}");
+                //Debug.Log($"Closest enemy: {closestEnemy.name}, distance: {minDistance}");
             }
         }
 
@@ -71,10 +65,12 @@ public class Player : Entity
 
     public void Attack(Entity enemy, float distance)
     {
-        if (enemy != null && canAttack)
+        Debug.Log($"Can attack: {canAttack}");
+        if (enemy && canAttack)
         {
             //Debug.Log($"distance: {distance}");
             isAttacking = true;
+            Debug.Log("Player is attacking");
 
             if (distance < shortAttackRange)
             {
@@ -82,7 +78,7 @@ public class Player : Entity
                 isShortRange = true;
                 isLongRange = false;
 
-                Debug.Log("Short range attack");
+                //Debug.Log("Short range attack");
             }
             else if (distance < longAttackRange)
             {
@@ -90,10 +86,10 @@ public class Player : Entity
                 isLongRange = true;
                 isShortRange = false;
 
-                Debug.Log("Long range attack");
+                //Debug.Log("Long range attack");
             }
 
-            AttackCooldown();
+            StartCoroutine(AttackCooldown());
         }
         else
         {

@@ -10,6 +10,13 @@ public class LevelController : MonoBehaviour
 
     public static event Action OnPlayerWon;
 
+    private void Start()
+    {
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.SetPlayer(player);
+        }
+    }
 
     void Update()
     {
@@ -21,11 +28,6 @@ public class LevelController : MonoBehaviour
         return enemies;
     }
 
-    public Vector3 GetPlayerPosition()
-    {
-        return player.GetPosition();
-    }
-
     private void CheckEnemiesStatus()
     {
         bool allEnemiesDead = true;
@@ -35,8 +37,6 @@ public class LevelController : MonoBehaviour
             if (!enemy.IsDead())
             {
                 allEnemiesDead = false;
-
-                enemy.SetPlayerDistance(Vector3.Distance(enemy.GetPosition(), player.GetPosition()));
             }
             else
             {
@@ -52,5 +52,15 @@ public class LevelController : MonoBehaviour
         {
             return;
         }
+    }
+
+    public Player GetPlayer()
+    {
+        return player;
+    }
+
+    private void OnDestroy()
+    {
+
     }
 }

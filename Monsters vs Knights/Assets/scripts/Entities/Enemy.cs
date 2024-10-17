@@ -1,53 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : Entity
 {
-    //[SerializeField] private LevelController level;
-    private Vector3 playerPosition;
+    private Player player;
 
     public void Awake()
     {
         maxHealth = 100;
-        longAttackRange = 1.5f;
-        shortAttackRange = 0.7f;
-        shortRangeDamage = 15;
-        longRangeDamage = 8;
-        defense = 5;
-        extraDefense = 0;
-        speed = 200f;
-
-        attackCooldown = 0.9f;
-
         currentHealth = maxHealth;
     }
 
     public void Update()
     {
         GetInput();
+        Walk();
     }
 
     public override void Walk()
     {
-        if (Mathf.Abs(playerDistance) > longAttackRange)
+        isWalking = false;
+        isAttacking = false;
+        isLongRange = false;
+        isShortRange = false;
+
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+
+        if (distance > longAttackRange)
         {
-            if ()
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            if (player.transform.position.x > transform.position.x)
+            {
+                transform.position += Vector3.right * speed * Time.deltaTime;
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+            isWalking = true;
         }
         else
         {
-            isWalking = false;
+            Attack(distance);
         }
-        isWalking = true;
     }
 
-    public void Attack(Vector3 playerPos)
+    public void Attack(float distance)
     {
-        if (!isWalking)
+        if (canAttack)
         {
+            if (distance > shortAttackRange)
+            {
+                player.ReceiveDamage(longRangeDamage);
+                isShortRange = false;
+                isLongRange = true;
+            }
+            else
+            {
+                player.ReceiveDamage(shortRangeDamage);
+                isLongRange = false;
+                isShortRange = true;
+            }
 
+            Debug.Log("Enemy is attacking");
+
+            StartCoroutine(AttackCooldown());
         }
+        
     }
 
     public void GetInput()
@@ -58,9 +81,9 @@ public class Enemy : Entity
         }
     }
 
-    public void SetPlayerPosition(Vector3 playerPos)
+    public void SetPlayer(Player player)
     {
-        playerPosition = playerPos;
+        this.player = player;
     }
 }
 
