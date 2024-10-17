@@ -16,6 +16,8 @@ public class LevelController : MonoBehaviour
         {
             enemy.SetPlayer(player);
         }
+
+        Marksman.OnMarksmanKillThemAll += CheckEnemiesStatus;
     }
 
     void Update()
@@ -46,7 +48,7 @@ public class LevelController : MonoBehaviour
 
         if (allEnemiesDead)
         {
-            OnPlayerWon?.Invoke(); 
+            OnPlayerWon?.Invoke();
         }
         else
         {
@@ -57,6 +59,14 @@ public class LevelController : MonoBehaviour
     public Player GetPlayer()
     {
         return player;
+    }
+
+    private void KillThemAll()
+    {
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.Die();
+        }
     }
 
     private void OnDestroy()

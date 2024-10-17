@@ -24,6 +24,7 @@ public abstract class Entity : MonoBehaviour
     protected bool isShortRange;
     protected bool wasHitted;
     protected bool hasWon;
+    protected bool isAlive;
 
 
 
@@ -48,10 +49,18 @@ public abstract class Entity : MonoBehaviour
     public void ReceiveDamage(int damage)
     {
         currentHealth -= (damage - (damage * defense / 100)); //mitigo dano usando la defensa como un porcentaje, defensa 5 quita el 5% del ataque
+
+        if (currentHealth < 1)
+        {
+            isAlive = false;
+            Die();
+        }
     }
 
     public virtual void Die()
     {
+        //this.gameObject.SetActive(false);
+        currentHealth = 0;
     }
 
     public bool IsDead()

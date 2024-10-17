@@ -22,8 +22,6 @@ public class Player : Entity
     {
         GetInput();
         GetClosestEnemy();
-
-        //Debug.Log($"player position: {transform.position}");
     }
 
     public override void Walk()
@@ -48,15 +46,11 @@ public class Player : Entity
         foreach (Enemy enemy in level.GetEnemies())
         {
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
-            //Debug.Log($"distance: {distance}");
-            //Debug.Log($"minDistance: {minDistance}");
 
             if (distance < minDistance)
             {
                 minDistance = distance;
                 closestEnemy = enemy;
-
-                //Debug.Log($"Closest enemy: {closestEnemy.name}, distance: {minDistance}");
             }
         }
 
@@ -68,7 +62,6 @@ public class Player : Entity
         Debug.Log($"Can attack: {canAttack}");
         if (enemy && canAttack)
         {
-            //Debug.Log($"distance: {distance}");
             isAttacking = true;
             Debug.Log("Player is attacking");
 
@@ -77,16 +70,12 @@ public class Player : Entity
                 enemy.ReceiveDamage(shortRangeDamage);
                 isShortRange = true;
                 isLongRange = false;
-
-                //Debug.Log("Short range attack");
             }
             else if (distance < longAttackRange)
             {
                 enemy.ReceiveDamage(longRangeDamage);
                 isLongRange = true;
                 isShortRange = false;
-
-                //Debug.Log("Long range attack");
             }
 
             StartCoroutine(AttackCooldown());

@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\entities\\marksman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\marksman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|e:\\repos\\monsters-vs-knights\\monsters vs knights\\assets\\scripts\\animator\\marksmananimatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animator\\marksmananimatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\animator\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animator\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EF681A3-7EC2-D113-6CA0-4FD26FD2CC1C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +38,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Marksman.cs",
+              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Marksman.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Marksman.cs",
+              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Marksman.cs",
+              "RelativeToolTip": "Assets\\scripts\\Entities\\Marksman.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:39:17.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MarksmanAnimatorController.cs",
+              "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\MarksmanAnimatorController.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Animator\\MarksmanAnimatorController.cs",
+              "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\MarksmanAnimatorController.cs",
+              "RelativeToolTip": "Assets\\scripts\\Animator\\MarksmanAnimatorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T21:39:02.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Enemy.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Enemy.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Enemy.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T04:04:46.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Player.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Player.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T16:36:19.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "LevelController.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\LevelController.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\LevelController.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\LevelController.cs",
               "RelativeToolTip": "Assets\\scripts\\LevelController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T01:54:22.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Entity.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Entity.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Entities\\Entity.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Entities\\Entity.cs",
               "RelativeToolTip": "Assets\\scripts\\Entities\\Entity.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwD4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T16:34:41.807Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "0d0e1c48-5ebf-44e0-8313-a7e32d78a419",
+        "Display": 1,
+        "X": 76,
+        "Y": 603,
+        "Width": 1553,
+        "Height": 776,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AnimatorController.cs",
               "DocumentMoniker": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\AnimatorController.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Animator\\AnimatorController.cs",
               "ToolTip": "E:\\Repos\\Monsters-vs-Knights\\Monsters vs Knights\\Assets\\scripts\\Animator\\AnimatorController.cs",
               "RelativeToolTip": "Assets\\scripts\\Animator\\AnimatorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T22:59:28.921Z",
               "EditorCaption": ""

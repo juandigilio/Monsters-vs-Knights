@@ -518,13 +518,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0
-  shortRangeDamage: 0
-  longRangeDamage: 0
+  shortRangeDamage: 25
+  longRangeDamage: 18
   defense: 0
   extraDefense: 0
-  speed: 500
-  shortAttackRange: 0
-  longAttackRange: 0
+  speed: 5
+  shortAttackRange: 0.9
+  longAttackRange: 2
+  attackCooldown: 0.7
   level: {fileID: 757565808}
 --- !u!114 &362681503
 MonoBehaviour:
@@ -1086,6 +1087,7 @@ MonoBehaviour:
   speed: 100
   shortAttackRange: 0
   longAttackRange: 0
+  attackCooldown: 0
   level: {fileID: 0}
 --- !u!1 &626884084
 GameObject:
@@ -1326,13 +1328,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0
-  shortRangeDamage: 0
-  longRangeDamage: 0
+  shortRangeDamage: 10
+  longRangeDamage: 6
   defense: 0
   extraDefense: 0
-  speed: 0
-  shortAttackRange: 0
-  longAttackRange: 0
+  speed: 1
+  shortAttackRange: 0.31
+  longAttackRange: 0.55
+  attackCooldown: 1
 --- !u!114 &729515888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,8 +1351,8 @@ MonoBehaviour:
   animations:
   - {fileID: 2043176755}
   - {fileID: 1055871260}
-  - {fileID: 0}
-  character: {fileID: 0}
+  - {fileID: 1952970332}
+  character: {fileID: 729515887}
 --- !u!1 &757565807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 729515887}
+  player: {fileID: 362681502}
 --- !u!4 &757565809
 Transform:
   m_ObjectHideFlags: 0
