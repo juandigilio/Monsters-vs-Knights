@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Player : Entity
@@ -15,11 +16,12 @@ public class Player : Entity
         maxHealth = 100;
         longAttackRange = 2;
         shortAttackRange = 1;
-        shortRangeDamage = 10;
-        longRangeDamage = 7;
+        shortRangeDamage = 25;
+        longRangeDamage = 15;
         defense = 5;
         extraDefense = 0;
         speed = 5f;
+        attackCooldown = 0.5f;
 
         currentHealth = maxHealth;
     }
@@ -67,11 +69,11 @@ public class Player : Entity
         Attack(closestEnemy, minDistance);
     }
 
-    public void Attack(Enemy enemy, float distance)
+    public void Attack(Entity enemy, float distance)
     {
-        if (enemy != null)
+        if (enemy != null && canAttack)
         {
-            Debug.Log($"distance: {distance}");
+            //Debug.Log($"distance: {distance}");
             isAttacking = true;
 
             if (distance < shortAttackRange)
@@ -91,6 +93,7 @@ public class Player : Entity
                 Debug.Log("Long range attack");
             }
 
+            AttackCooldown();
         }
         else
         {

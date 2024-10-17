@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
@@ -11,15 +12,20 @@ public abstract class Entity : MonoBehaviour
 
     [SerializeField] protected float shortAttackRange;
     [SerializeField] protected float longAttackRange;
+    [SerializeField] protected float attackCooldown;
+    //[SerializeField] protected float recieveDamageCooldown;
 
     protected int currentHealth;
 
+    protected bool canAttack;
+    //protected bool canBeAttacked;
     protected bool isWalking;
     protected bool isAttacking;
     protected bool isLongRange;
     protected bool isShortRange;
     protected bool wasHitted;
     protected bool hasWon;
+
 
 
     public virtual void Start()
@@ -38,13 +44,11 @@ public abstract class Entity : MonoBehaviour
     {
     }
 
-    //public virtual void Attack()
-    //{
-    //}
-
     public void ReceiveDamage(int damage)
     {
         currentHealth -= (damage - (damage * defense / 100)); //mitigo dano usando la defensa como un porcentaje, defensa 5 quita el 5% del ataque
+        //wasHitted = true;
+        //CanBeAttackedCooldown();
     }
 
     public virtual void Die()
@@ -53,6 +57,8 @@ public abstract class Entity : MonoBehaviour
 
     public bool IsDead()
     {
+        Debug.Log(tag + "IsDead" + currentHealth);
+
         return currentHealth < 1 ? true : false;
     }
 
@@ -69,6 +75,11 @@ public abstract class Entity : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
     }
 
     public bool IsWalking()
@@ -93,11 +104,35 @@ public abstract class Entity : MonoBehaviour
 
     public bool WasHitted()
     {
-        return wasHitted;
+        if (wasHitted)
+        {
+            wasHitted = false;
+            return true;
+        }
+        return false;
     }
 
     public bool HasWon()
     {
         return hasWon;
     }
+
+    //public bool CanBeAttacked()
+    //{
+    //    return canBeAttacked;
+    //}
+
+    protected IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
+    //private IEnumerable CanBeAttackedCooldown()
+    //{
+    //    canBeAttacked = false;
+    //    yield return new WaitForSeconds(recieveDamageCooldown);
+    //    canBeAttacked = true;
+    //}
 }
