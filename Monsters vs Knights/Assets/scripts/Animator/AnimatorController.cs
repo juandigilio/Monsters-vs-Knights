@@ -29,34 +29,13 @@ public class AnimatorController : MonoBehaviour
 
         anim.SetBool("isLongRange", character.IsLongRange());
 
-        CheckStatus();
-    }
+        anim.SetBool("isDead", character.IsDead());
 
-    private void CheckStatus()
-    {
-        if (character.HasWon())
-        {
-            SetWiningAnimation();
-        }
-        if (character.IsDead())
-        {
-            SetDeathAnimation();
-        }
-    }
+        anim.SetBool("hasWon", character.HasWon());
 
-    private void SetWiningAnimation()
-    {
-        foreach (Animator anim in animations)
+        if (character.WasHitted())
         {
-            anim.SetTrigger("hasWon");
-        }
-    }
-
-    private void SetDeathAnimation()
-    {
-        foreach (Animator anim in animations)
-        {
-            anim.SetTrigger("isDead");
+            anim.SetTrigger("wasHitted");
         }
     }
 
